@@ -1,0 +1,11 @@
+[recording]
+output_dir = "data/segments"
+segment_seconds = 60
+retention_hours = 24
+device_id = "pilot-rpi-001"
+
+[offload]
+enabled = true
+trusted_ssids = ["HomeWiFi"]
+method = "rsync"
+target = "nas:/srv/dashcam/pilot-rpi-001"
